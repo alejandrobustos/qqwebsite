@@ -1,0 +1,139 @@
+html, body, .content {
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.stars, .sparks, .content, .social {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+
+.social {
+    width:500px;
+    text-align: center;
+    z-index: 3;
+    bottom: 0;
+    height: auto;
+    top:auto;
+    margin: 0 auto;
+}
+
+.social * {
+    margin: 25px 7px;
+}
+
+.bcplayer {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.stars {
+    z-index:1;
+    background: url(../images/sky.png);
+}
+
+.content {
+    top: 50%;
+    margin-top: -125px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.content h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4em;
+    line-height: 0.65em;
+    text-align: center;
+    letter-spacing: 0.6em;
+}
+
+.glow {
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 27px #ff0080;
+}
+
+.glow:hover {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 27px #ff0080, 0 0 37px #ff0080;
+}
+
+.pink {
+    color: rgba(253, 202, 239, 1);
+}
+
+.yellow {
+    color: rgba(242, 246, 160, 1);
+}
+
+.blue {
+    color: rgba(143, 232, 251, 1);
+}
+
+.red {
+    color: rgb(224, 27, 13);
+}
+
+.gold {
+    color: rgba(192, 195, 147, 1);
+}
+
+.sparks {
+    z-index:0;
+    background: url(../images/twinkles_01.png);
+    animation:move-twink-back 20s linear infinite;
+    moz-animation:move-twink-back 20s linear infinite;
+    -ms-animation:move-twink-back 20s linear infinite;
+    -o-animation:move-twink-back 20s linear infinite;
+    -webkit-animation:move-twink-back 20s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {
+        background-position:0 0;
+        filter: saturate(5);
+    }
+    to {
+        background-position:-100% 100%;
+        filter: saturate(10);
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position:0 0;
+        filter: saturate(5);
+    }
+    to {
+        background-position:-100% 100%;
+        filter: saturate(10);
+    }
+}
+@-moz-keyframes move-twink-back {
+    from {
+        background-position:0 0;
+        filter: saturate(5);
+    }
+    to {
+        background-position:-100% 100%;
+        filter: saturate(10);
+    }
+}
+@-ms-keyframes move-twink-back {
+    from {
+        background-position:0 0;
+        filter: saturate(5);
+    }
+    to {
+        background-position:-100% 100%;
+        filter: saturate(10);
+    }
+}
