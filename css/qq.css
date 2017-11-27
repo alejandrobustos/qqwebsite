@@ -43,11 +43,10 @@ html, body, .content {
 }
 
 .content {
-    top: 50%;
-    margin-top: -125px;
-    height: 500px;
+    top: 10%;
     overflow: hidden;
     z-index: 2;
+    text-align: center;
 }
 
 .content h1 {
